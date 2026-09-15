@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.nintact/nintact",
+  "description": "Create a contact form, read what came in, and approve AI-written replies. No SMTP, no DNS records.",
+  "version": "0.5.0",
+  "websiteUrl": "https://nintact.com",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "nintact-mcp",
+      "version": "0.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "NINTACT_API_KEY",
+          "description": "API key. Run `npx nintact-mcp login` to create one without pasting it, or issue one at https://nintact.com/dashboard/settings/connect",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ],
+  "repositoryUrl": "https://github.com/homareyoshizaki/nintact-mcp"
+}

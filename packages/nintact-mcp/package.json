@@ -1,0 +1,55 @@
+{
+  "name": "nintact-mcp",
+  "version": "0.5.0",
+  "description": "MCP server for NINTACT — create contact forms, read what came in, approve AI-written replies.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude",
+    "contact-form",
+    "forms",
+    "email",
+    "spf",
+    "dkim",
+    "deliverability",
+    "nintact"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "nintact-mcp": "./dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "nintact": "^0.5.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://nintact.com",
+  "mcpName": "com.nintact/nintact",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homareyoshizaki/nintact-mcp.git",
+    "directory": "packages/nintact-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/homareyoshizaki/nintact-mcp/issues"
+  }
+}

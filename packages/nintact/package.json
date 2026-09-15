@@ -1,0 +1,74 @@
+{
+  "name": "nintact",
+  "version": "0.5.0",
+  "description": "AI first-responder for your contact form. No SMTP, no DNS records, one key.",
+  "keywords": [
+    "contact-form",
+    "form",
+    "email",
+    "deliverability",
+    "spf",
+    "dkim",
+    "ai",
+    "nextjs",
+    "react",
+    "nintact"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "nintact": "./dist/cli.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "react": "^19",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://nintact.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homareyoshizaki/nintact-mcp.git",
+    "directory": "packages/nintact"
+  },
+  "bugs": {
+    "url": "https://github.com/homareyoshizaki/nintact-mcp/issues"
+  }
+}
