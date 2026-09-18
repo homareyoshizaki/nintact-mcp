@@ -1,14 +1,14 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.nintact/nintact",
-  "description": "Create a contact form, read what came in, and approve AI-written replies. No SMTP, no DNS records.",
-  "version": "0.5.0",
+  "description": "Contact forms that actually arrive. No SPF/DKIM, no SMTP. AI sorts them and drafts the reply.",
+  "version": "0.5.2",
   "websiteUrl": "https://nintact.com",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "nintact-mcp",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "transport": {
         "type": "stdio"
       },
@@ -23,5 +23,11 @@
       ]
     }
   ],
-  "repositoryUrl": "https://github.com/homareyoshizaki/nintact-mcp"
+  "title": "nintact",
+  "repository": {
+    "url": "https://github.com/homareyoshizaki/nintact-mcp",
+    "source": "github",
+    "id": "1370981725",
+    "subfolder": "packages/nintact-mcp"
+  }
 }

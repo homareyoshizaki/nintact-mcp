@@ -1,6 +1,6 @@
 {
   "name": "nintact",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "AI first-responder for your contact form. No SMTP, no DNS records, one key.",
   "keywords": [
     "contact-form",
